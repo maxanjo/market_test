@@ -34,7 +34,7 @@ class ProductFactory extends Factory
             'name' => $name,
             'price' => $this->faker->randomFloat(2, 500, 100000),
             'in_stock' => $this->faker->boolean(80),
-            'rating' => $this->faker->randomFloat(1, 1, 5), // От 1 до 5 (0 обычно не ставят)
+            'rating' => $this->faker->randomFloat(1, 1, 5), 
             'category_id' => $category->id,
         ];
     }
